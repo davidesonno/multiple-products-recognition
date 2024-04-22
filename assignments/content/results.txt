@@ -1,0 +1,22 @@
+{'prefilter': {'k_size': 9}, 'bilateral': {'k': 9, 'sigma1': 1500, 'sigma2': 1500}}
+Scene 1:
+	Product 1, 346 matches: {'position': (412, 538), 'width': '1048px', 'height': '802px'}
+	Product 2, 313 matches: {'position': (1248, 534), 'width': '1045px', 'height': '805px'}
+	Product 5, 57 matches: {'position': (1244, 508), 'width': '891px', 'height': '635px'}
+	Product 14, 60 matches: {'position': (382, 592), 'width': '1003px', 'height': '854px'}
+Scene 2:
+	Product 2, 50 matches: {'position': (1534, 402), 'width': '813px', 'height': '607px'}
+	Product 3, 138 matches: {'position': (304, 493), 'width': '943px', 'height': '604px'}
+	Product 4, 138 matches: {'position': (927, 482), 'width': '951px', 'height': '630px'}
+	Product 5, 146 matches: {'position': (1528, 450), 'width': '842px', 'height': '560px'}
+Scene 3:
+	Product 3, 61 matches: {'position': (1441, 48), 'width': '3px', 'height': '0px'}
+	Product 6, 57 matches: {'position': (299, 457), 'width': '672px', 'height': '600px'}
+	Product 7, 52 matches: {'position': (887, 461), 'width': '652px', 'height': '540px'}
+	Product 8, 94 matches: {'position': (1448, 400), 'width': '777px', 'height': '558px'}
+	Product 9, 56 matches: {'position': (332, 560), 'width': '0px', 'height': '1px'}
+Scene 4:
+	Product 1, 88 matches: {'position': (886, 914), 'width': '506px', 'height': '375px'}
+Scene 5:
+	Product 11, 96 matches: {'position': (368, 752), 'width': '552px', 'height': '366px'}
+	Product 12, 54 matches: {'position': (706, 738), 'width': '664px', 'height': '429px'}
