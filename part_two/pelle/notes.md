@@ -6,9 +6,10 @@
 * [X] provare modello semplicissimo
 * [X] copiare e adattare il trainer dell'es 5
 * [ ] Implementare un tester da lanciare sul test data loader --> a quanto pare non necessario
-* [ ] lanciare diversi modelli con account diversi
+* [X] lanciare (Simple, Medium, Complex, ResNet-18) con account diversi ==> ultimi due troppo lenti --> provarli con batch size diversi
 * [ ] motivare meglio le scelte di design --> troppo didattiche
-* [ ] provare anche ad implementare una rete nota (ResNet-18)
+* [X] provare anche ad implementare una rete nota (ResNet-18)
+* [ ] provare batch_size al massimo (256 o 512)
 
 ## Models
 
@@ -58,5 +59,22 @@
   Dropout is added to prevent overfitting by randomly setting a fraction of the input units to 0 at each update during training time.
 * **Activation and Pooling** :
   The combination of ReLU activation, batch normalization, and max pooling after each convolutional layer ensures robust learning, better generalization, and reduced overfitting.
+
+### ResNet-N
+
+* **Depth** : N=18 layers (including convolutional and fully connected layers).
+* **Residual Connections** : Helps in mitigating vanishing gradients and allows for deeper networks by enabling easier flow of gradients.
+* **Batch Normalization** : Stabilizes learning and improves convergence.
+* **Adaptability** : The `_make_layer` method allows for easy configuration of different ResNet variants by changing the number of blocks per layer.
+  We used a basic block of [2,2,2,2] so 16 convolutional layers + first + last = 18
+
+## Best Results
+
+| Model     | Params |
+| --------- | ------ |
+| Simple    | 0.38   |
+| Medium    | 0.51   |
+| Complex   |        |
+| ResNet-18 |        |
 
 # Notes - part 2
