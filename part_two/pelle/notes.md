@@ -9,7 +9,10 @@
 * [X] lanciare (Simple, Medium, Complex, ResNet-18) con account diversi ==> ultimi due troppo lenti --> provarli con batch size diversi
 * [ ] motivare meglio le scelte di design --> troppo didattiche
 * [X] provare anche ad implementare una rete nota (ResNet-18)
-* [ ] provare batch_size al massimo (256 o 512)
+* [X] provare batch_size al massimo (256 o 512) --> migliore sembra essere 16
+* [X] migliorare il sistema di backup dei parametri (fare un file .txt con lo stesso nome ma con anche le trasformazioni ai dati e la struttura della rete), così che i file siano punti di riferimento universali.
+* [ ] provare altre modifiche dei parametri
+* [ ] rilanciare tutti i modelli con l'attuale sistema di backup
 
 ## Models
 
@@ -70,11 +73,11 @@
 
 ## Best Results
 
-| Model     | Params |
-| --------- | ------ |
-| Simple    | 0.38   |
-| Medium    | 0.51   |
-| Complex   |        |
-| ResNet-18 |        |
+| Model     | Params | Training Time |
+| --------- | ------ | ------------- |
+| Simple    | 0.38   |               |
+| Medium    | 0.51   |               |
+| Complex   | 0.34   |               |
+| ResNet-18 | 0.69   |               |
 
 # Notes - part 2
