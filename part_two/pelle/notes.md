@@ -10,9 +10,19 @@
 * [ ] motivare meglio le scelte di design --> troppo didattiche
 * [X] provare anche ad implementare una rete nota (ResNet-18)
 * [X] provare batch_size al massimo (256 o 512) --> migliore sembra essere 16
-* [X] migliorare il sistema di backup dei parametri (fare un file .txt con lo stesso nome ma con anche le trasformazioni ai dati e la struttura della rete), così che i file siano punti di riferimento universali.
-* [ ] provare altre modifiche dei parametri
-* [ ] rilanciare tutti i modelli con l'attuale sistema di backup
+* [X] migliorare il sistema di backup dei parametri (fare un file .json con lo stesso nome ma con anche le trasformazioni ai dati e la struttura della rete), così che i file siano punti di riferimento universali.
+* [ ] provare altre modifiche dei parametri su ResNet-18 (la rete migliore durante le prove) ==> mi sono fermato al 70%
+  * [X] Eseguire batch_size=16, num_epochs=20, con nuovi augmented
+  * [X] Eseguire batch_size=16, num_epochs=30, con nuovi augmented
+  * [X] Eseguire batch_size=16, num_epochs=30, con vecchi augmented
+  * [X] Eseguire batch_size=128, num_epochs=30, con nuovi augmented
+  * [X] Eseguire batch_size=128, num_epochs=30, con vecchi augmented ==> i batch_size grandi performano peggio della soglia ideale di 16
+  * [X] Eseguire batch_size=16, num_epochs=30, con vecchi augmented, wd=5e-4 --> 70% !!!
+  * [X] Eseguire batch_size=16, num_epochs=30, con vecchi augmented, wd=5e-4, step_size=10 --> identico a quello prima
+  * [ ] Eseguire batch_size=16, num_epochs=30, con nuovi augmented, wd=5e-4 (NON PROVATO)
+  * [ ] Eseguire batch_size=128, num_epochs=30, con nuovi augmented, wd=5e-4 (NON PROVATO)
+  * [ ] Eseguire batch_size=128, num_epochs=20, con nuovi augmented, wd=5e-4 (NON PROVATO)
+* [ ] rilanciare tutti i modelli con l'attuale sistema di backup, alcuni hanno solo i cfg (non necessario credo)
 
 ## Models
 
@@ -78,6 +88,6 @@
 | Simple    | 0.38   |               |
 | Medium    | 0.51   |               |
 | Complex   | 0.34   |               |
-| ResNet-18 | 0.69   |               |
+| ResNet-18 | 0.70   | 12m28s        |
 
 # Notes - part 2
