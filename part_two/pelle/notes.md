@@ -7,7 +7,7 @@
 * [X] copiare e adattare il trainer dell'es 5
 * [ ] Implementare un tester da lanciare sul test data loader --> a quanto pare non necessario
 * [X] lanciare (Simple, Medium, Complex, ResNet-18) con account diversi ==> ultimi due troppo lenti --> provarli con batch size diversi
-* [ ] motivare meglio le scelte di design --> troppo didattiche
+* [ ] **motivare meglio le scelte di design --> troppo didattiche**
 * [X] provare anche ad implementare una rete nota (ResNet-18)
 * [X] provare batch_size al massimo (256 o 512) --> migliore sembra essere 16
 * [X] migliorare il sistema di backup dei parametri (fare un file .json con lo stesso nome ma con anche le trasformazioni ai dati e la struttura della rete), così che i file siano punti di riferimento universali.
@@ -96,7 +96,9 @@
 
 * [X] Provare metodi di fine-tuning su internet
 * [X] Provare fine tuning dell'es 5 --> migliore
+* ** Motivare correttamente**
 
 ## Step 2
 
 * [X] Impostare un fine tuning come prima ma con la possibilità di cambiare cfg
+* ** Motivare correttamente**
