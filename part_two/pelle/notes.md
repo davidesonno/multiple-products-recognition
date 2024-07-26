@@ -91,3 +91,12 @@
 | ResNet-18 | 0.70   | 12m28s        |
 
 # Notes - part 2
+
+## Step 1
+
+* [X] Provare metodi di fine-tuning su internet
+* [X] Provare fine tuning dell'es 5 --> migliore
+
+## Step 2
+
+* [X] Impostare un fine tuning come prima ma con la possibilità di cambiare cfg
