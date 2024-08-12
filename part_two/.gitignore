@@ -1,6 +1,9 @@
 /pelle/params
+/params
 # /pelle/image
 /pelle/wandb
+/wandb
 /pelle/ckpts
+/ckpts
 /GroceryStoreDataset
 /pelle/GroceryStoreDataset
